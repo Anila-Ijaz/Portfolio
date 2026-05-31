@@ -3,5 +3,9 @@
     <clipPath id="c"><circle cx="50" cy="50" r="50"/></clipPath>
   </defs>
   <circle cx="50" cy="50" r="50" fill="#18181E"/>
-  <image href="assets/images/profile.jpg" x="-102" y="0" width="252" height="283" clip-path="url(#c)" preserveAspectRatio="xMidYMin meet"/>
+  <image href="assets/images/profile.jpg"
+    x="-116" y="-29"
+    width="263" height="286"
+    clip-path="url(#c)"
+    preserveAspectRatio="xMidYMid slice"/>
 </svg>
