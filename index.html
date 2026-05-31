@@ -207,7 +207,7 @@ section { padding: 6rem 0; }
 .about-photo::before { content:''; position:absolute; inset:-8px; border-radius:50%; z-index:-1; background:conic-gradient(from 0deg,var(--accent),var(--accent-secondary),transparent,var(--accent)); animation:orbitSpin 8s linear infinite; opacity:0.25; }
 .about-photo::after { content:''; position:absolute; inset:-18px; border-radius:50%; z-index:-2; border:1px dashed rgba(108,99,255,0.12); animation:counterSpin 25s linear infinite; }
 .about-photo-inner { aspect-ratio: 1; border-radius: 50%; overflow: hidden; border: 2px solid var(--border); background: var(--bg-card); }
-.about-photo-inner img { width:100%; height:100%; object-fit:cover; object-position:60% 0%; transform:scale(1.85); transform-origin:80% 20%; display:block; }
+.about-photo-inner img { width:100%; height:100%; object-fit:cover; object-position:50% 0%; transform:scale(1.85); transform-origin:78% 23%; display:block; }
 .about-photo-placeholder { width:100%; height:100%; display:flex; flex-direction:column; align-items:center; justify-content:center; gap:0.5rem; color:var(--text-muted); font-size:0.8rem; }
 .about-photo-placeholder .initials { font-family:var(--serif); font-size:4rem; color:var(--accent); line-height:1; }
 .project-thumb img { width:100%; height:100%; object-fit:cover; position:absolute; inset:0; }
@@ -350,7 +350,7 @@ footer > .container > p { font-size: 0.72rem; color: var(--text-muted); }
       <li><a href="#projects">Projects</a></li>
       <li><a href="#education">Education</a></li>
       <li><a href="#contact">Contact</a></li>
-      <li><a href="assets/resume.pdf" target="_blank" download class="nav-resume">Resume ↓</a></li>
+      <li><a href="assets/resume.pdf" target="_blank" class="nav-resume">Resume ↓</a></li>
     </ul>
     <button class="hamburger" onclick="document.getElementById('navLinks').classList.toggle('open')" aria-label="Menu">
       <span></span><span></span><span></span>
@@ -398,7 +398,7 @@ footer > .container > p { font-size: 0.72rem; color: var(--text-muted); }
           <svg viewBox="0 0 24 24"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
           GitHub
         </a>
-        <a href="assets/resume.pdf" target="_blank" download>
+        <a href="assets/resume.pdf" target="_blank">
           <svg viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg>
           Resume
         </a>
@@ -571,22 +571,24 @@ footer > .container > p { font-size: 0.72rem; color: var(--text-muted); }
     <p class="section-desc reveal">AI agents, RAG pipelines, document intelligence, and computer vision systems.</p>
     <div class="projects-grid">
 
+      <!-- FEATURED: Spatial Agent System (actively working on) -->
       <div class="project-card featured reveal">
         <div class="project-thumb">
-          <img src="assets/projects/forge-ai-agent.svg" alt="Forge Your AI Agent" onerror="this.style.display='none';">
-          <span class="project-thumb-icon">⚡</span>
-          <span class="project-thumb-tag">AI AGENTS</span>
+          <img src="assets/projects/spatial-agent.svg" alt="Spatial Agent System" onerror="this.style.display='none';">
+          <span class="project-thumb-icon">🌍</span>
+          <span class="project-thumb-tag">MULTIMODAL AI · ACTIVE</span>
         </div>
         <div class="project-body">
-          <h3>Forge Your AI Agent</h3>
-          <p>Modular AI agent builder with configurable tool chains, memory, and multi-step execution flows. Supports custom system prompts, tool integration, and streamed responses — built for rapid agent experimentation and production deployment.</p>
-          <div class="project-tech"><span>Python</span><span>LangChain</span><span>LLMs</span><span>FastAPI</span><span>Streamlit</span></div>
+          <h3>Spatial Agent System</h3>
+          <p>Multimodal AI agent that takes a photo, identifies its location using CLIP vision + reverse geocoding, and streams a contextual narration — then lets you chat about the place. Built on a LangGraph pipeline with intent routing, RAG tools, and a pgvector-backed session memory, served via FastAPI + Streamlit.</p>
+          <div class="project-tech"><span>Python</span><span>LangGraph</span><span>CLIP</span><span>FastAPI</span><span>Streamlit</span><span>pgvector</span><span>RAG</span></div>
           <div class="project-links">
-            <a href="https://github.com/Anila-Ijaz/forge-your-ai-agent" target="_blank">↗ View on GitHub</a>
+            <a href="https://github.com/Anila-Ijaz" target="_blank">↗ View on GitHub</a>
           </div>
         </div>
       </div>
 
+      <!-- InsightRAG -->
       <div class="project-card reveal">
         <div class="project-thumb">
           <img src="assets/projects/insightrag.svg" alt="InsightRAG" onerror="this.style.display='none';">
@@ -603,38 +605,24 @@ footer > .container > p { font-size: 0.72rem; color: var(--text-muted); }
         </div>
       </div>
 
+      <!-- Forge Your AI Agent -->
       <div class="project-card reveal">
         <div class="project-thumb">
-          <img src="assets/projects/fleet-document.svg" alt="Fleet Document Intelligence" onerror="this.style.display='none';">
-          <span class="project-thumb-icon">📄</span>
-          <span class="project-thumb-tag">DOCUMENT AI</span>
+          <img src="assets/projects/forge-ai-agent.svg" alt="Forge Your AI Agent" onerror="this.style.display='none';">
+          <span class="project-thumb-icon">⚡</span>
+          <span class="project-thumb-tag">AI AGENTS</span>
         </div>
         <div class="project-body">
-          <h3>Fleet Document Intelligence</h3>
-          <p>Intelligent document processing platform for fleet management. Classifies, extracts, and queries documents using LLMs and OCR — enabling natural language Q&A over structured and unstructured fleet records.</p>
-          <div class="project-tech"><span>Python</span><span>LLMs</span><span>OCR</span><span>FastAPI</span><span>Document AI</span></div>
+          <h3>Forge Your AI Agent</h3>
+          <p>Modular AI agent builder with configurable tool chains, memory, and multi-step execution flows. Supports custom system prompts, tool integration, and streamed responses — built for rapid agent experimentation and production deployment.</p>
+          <div class="project-tech"><span>Python</span><span>LangChain</span><span>LLMs</span><span>FastAPI</span><span>Streamlit</span></div>
           <div class="project-links">
-            <a href="https://github.com/Anila-Ijaz/fleet-doc-intelligence" target="_blank">↗ View on GitHub</a>
+            <a href="https://github.com/Anila-Ijaz/forge-your-ai-agent" target="_blank">↗ View on GitHub</a>
           </div>
         </div>
       </div>
 
-      <div class="project-card reveal">
-        <div class="project-thumb">
-          <img src="assets/projects/pixelpartition.svg" alt="PixelPartition" onerror="this.style.display='none';">
-          <span class="project-thumb-icon">🔍</span>
-          <span class="project-thumb-tag">ML / CLUSTERING</span>
-        </div>
-        <div class="project-body">
-          <h3>PixelPartition</h3>
-          <p>Pattern & anomaly detection system using K-Means and DBSCAN. Systematic hyperparameter tuning, rigorous evaluation metrics, and modular components designed for algorithm swapping — open/closed principle in action.</p>
-          <div class="project-tech"><span>Python</span><span>Scikit-learn</span><span>OpenCV</span><span>NumPy</span></div>
-          <div class="project-links">
-            <a href="https://github.com/Anila-Ijaz" target="_blank">↗ View on GitHub</a>
-          </div>
-        </div>
-      </div>
-
+      <!-- Object Detection -->
       <div class="project-card reveal">
         <div class="project-thumb">
           <img src="assets/projects/object-detection.svg" alt="Object Detection" onerror="this.style.display='none';">
@@ -651,10 +639,27 @@ footer > .container > p { font-size: 0.72rem; color: var(--text-muted); }
         </div>
       </div>
 
+      <!-- PixelPartition -->
+      <div class="project-card reveal">
+        <div class="project-thumb">
+          <img src="assets/projects/pixelpartition.svg" alt="PixelPartition" onerror="this.style.display='none';">
+          <span class="project-thumb-icon">🔍</span>
+          <span class="project-thumb-tag">ML / CLUSTERING</span>
+        </div>
+        <div class="project-body">
+          <h3>PixelPartition</h3>
+          <p>Pattern & anomaly detection using K-Means and DBSCAN. Systematic hyperparameter tuning, rigorous evaluation metrics, and modular components designed for algorithm swapping — open/closed principle in action.</p>
+          <div class="project-tech"><span>Python</span><span>Scikit-learn</span><span>OpenCV</span><span>NumPy</span></div>
+          <div class="project-links">
+            <a href="https://github.com/Anila-Ijaz" target="_blank">↗ View on GitHub</a>
+          </div>
+        </div>
+      </div>
+
     </div>
     <div class="reveal" style="margin-top:2rem;display:flex;gap:1rem;flex-wrap:wrap;">
       <a href="https://github.com/Anila-Ijaz" target="_blank" class="btn-primary">View More on GitHub →</a>
-      <a href="assets/resume.pdf" target="_blank" download class="btn-secondary">📄 Download Resume</a>
+      <a href="assets/resume.pdf" target="_blank" class="btn-secondary">📄 View Resume</a>
     </div>
   </div>
 </section>
