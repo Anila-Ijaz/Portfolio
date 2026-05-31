@@ -205,9 +205,10 @@ section { padding: 6rem 0; }
 .about-photo::before { content:''; position:absolute; inset:-8px; border-radius:50%; z-index:-1; background:conic-gradient(from 0deg,var(--accent),var(--accent-secondary),transparent,var(--accent)); animation:orbitSpin 8s linear infinite; opacity:0.25; }
 .about-photo::after { content:''; position:absolute; inset:-18px; border-radius:50%; z-index:-2; border:1px dashed rgba(108,99,255,0.12); animation:counterSpin 25s linear infinite; }
 .about-photo-inner { aspect-ratio: 1; border-radius: 50%; overflow: hidden; border: 2px solid var(--border); background: var(--bg-card); }
-.about-photo-inner img { width:100%; height:100%; object-fit:cover; }
+.about-photo-inner img { width:100%; height:100%; object-fit:cover; object-position:60% 18%; display:block; image-rendering:auto; }
 .about-photo-placeholder { width:100%; height:100%; display:flex; flex-direction:column; align-items:center; justify-content:center; gap:0.5rem; color:var(--text-muted); font-size:0.8rem; }
 .about-photo-placeholder .initials { font-family:var(--serif); font-size:4rem; color:var(--accent); line-height:1; }
+.project-thumb img { width:100%; height:100%; object-fit:cover; position:absolute; inset:0; }
 .about-text h3 { font-family: var(--serif); font-size: 1.5rem; margin-bottom: 1.2rem; font-weight: 400; }
 .about-text p { color: var(--text-muted); margin-bottom: 1rem; font-weight: 300; font-size: 0.95rem; }
 .about-text strong { color: var(--text); font-weight: 600; }
@@ -416,7 +417,12 @@ footer > .container > p { font-size: 0.72rem; color: var(--text-muted); }
     <div class="about-grid">
       <div class="about-photo reveal">
         <div class="about-photo-inner">
-          <div class="about-photo-placeholder">
+          <img
+            src="assets/images/profile.jpg"
+            alt="Anila Ijaz"
+            onerror="this.style.display='none';this.nextElementSibling.style.display='flex';"
+          >
+          <div class="about-photo-placeholder" style="display:none;">
             <div class="initials">AI</div>
             <span>Add your photo</span>
           </div>
@@ -564,6 +570,7 @@ footer > .container > p { font-size: 0.72rem; color: var(--text-muted); }
 
       <div class="project-card featured reveal">
         <div class="project-thumb">
+          <img src="assets/projects/healthcare-chatbot.svg" alt="Healthcare Chatbot" onerror="this.style.display='none';">
           <span class="project-thumb-icon">🤖</span>
           <span class="project-thumb-tag">LLM + RAG</span>
         </div>
@@ -579,6 +586,7 @@ footer > .container > p { font-size: 0.72rem; color: var(--text-muted); }
 
       <div class="project-card reveal">
         <div class="project-thumb">
+          <img src="assets/projects/pixelpartition.svg" alt="PixelPartition" onerror="this.style.display='none';">
           <span class="project-thumb-icon">🔍</span>
           <span class="project-thumb-tag">ML / CLUSTERING</span>
         </div>
@@ -594,6 +602,7 @@ footer > .container > p { font-size: 0.72rem; color: var(--text-muted); }
 
       <div class="project-card reveal">
         <div class="project-thumb">
+          <img src="assets/projects/object-detection.svg" alt="Object Detection" onerror="this.style.display='none';">
           <span class="project-thumb-icon">👁️</span>
           <span class="project-thumb-tag">COMPUTER VISION</span>
         </div>
