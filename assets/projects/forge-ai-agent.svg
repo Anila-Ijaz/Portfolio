@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="300" viewBox="0 0 800 300">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#131318"/>
+      <stop offset="100%" stop-color="#18181E"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="300" fill="url(#bg)"/>
+  <!-- grid -->
+  <line x1="0" y1="75" x2="800" y2="75" stroke="#2A2A35" stroke-width="1"/>
+  <line x1="0" y1="150" x2="800" y2="150" stroke="#2A2A35" stroke-width="1"/>
+  <line x1="0" y1="225" x2="800" y2="225" stroke="#2A2A35" stroke-width="1"/>
+  <!-- agent nodes -->
+  <circle cx="120" cy="100" r="28" fill="#1e1e2a" stroke="#6C63FF" stroke-width="1.5"/>
+  <text x="120" y="104" text-anchor="middle" font-size="16">🧠</text>
+  <text x="120" y="144" text-anchor="middle" font-family="monospace" font-size="9" fill="#8B8B95">Planner</text>
+  <!-- arrows -->
+  <line x1="150" y1="100" x2="195" y2="100" stroke="#6C63FF" stroke-width="1.5" stroke-dasharray="4 3"/>
+  <polygon points="195,96 203,100 195,104" fill="#6C63FF"/>
+  <!-- tool node -->
+  <rect x="205" y="74" width="80" height="52" rx="8" fill="#1e1e2a" stroke="#00D4AA" stroke-width="1.5"/>
+  <text x="245" y="98" text-anchor="middle" font-size="14">🔧</text>
+  <text x="245" y="115" text-anchor="middle" font-family="monospace" font-size="9" fill="#00D4AA">Tool Call</text>
+  <!-- arrow -->
+  <line x1="287" y1="100" x2="332" y2="100" stroke="#00D4AA" stroke-width="1.5" stroke-dasharray="4 3"/>
+  <polygon points="332,96 340,100 332,104" fill="#00D4AA"/>
+  <!-- memory node -->
+  <circle cx="360" cy="100" r="28" fill="#1e1e2a" stroke="#9B8FFF" stroke-width="1.5"/>
+  <text x="360" y="104" text-anchor="middle" font-size="16">💾</text>
+  <text x="360" y="144" text-anchor="middle" font-family="monospace" font-size="9" fill="#8B8B95">Memory</text>
+  <!-- arrow -->
+  <line x1="390" y1="100" x2="435" y2="100" stroke="#9B8FFF" stroke-width="1.5" stroke-dasharray="4 3"/>
+  <polygon points="435,96 443,100 435,104" fill="#9B8FFF"/>
+  <!-- output node -->
+  <rect x="445" y="74" width="80" height="52" rx="8" fill="#1e1e2a" stroke="#6C63FF" stroke-width="1.5"/>
+  <text x="485" y="98" text-anchor="middle" font-size="14">⚡</text>
+  <text x="485" y="115" text-anchor="middle" font-family="monospace" font-size="9" fill="#6C63FF">Response</text>
+  <!-- config panel -->
+  <rect x="570" y="60" width="200" height="170" rx="10" fill="#18181E" stroke="#2A2A35" stroke-width="1"/>
+  <text x="670" y="84" text-anchor="middle" font-family="monospace" font-size="10" fill="#8B8B95" letter-spacing="1">AGENT CONFIG</text>
+  <line x1="580" y1="93" x2="760" y2="93" stroke="#2A2A35" stroke-width="1"/>
+  <text x="590" y="112" font-family="monospace" font-size="9" fill="#6C63FF">model:</text>
+  <text x="640" y="112" font-family="monospace" font-size="9" fill="#EAEAEC">gpt-4o</text>
+  <text x="590" y="130" font-family="monospace" font-size="9" fill="#6C63FF">tools:</text>
+  <text x="640" y="130" font-family="monospace" font-size="9" fill="#EAEAEC">[search, code]</text>
+  <text x="590" y="148" font-family="monospace" font-size="9" fill="#6C63FF">memory:</text>
+  <text x="648" y="148" font-family="monospace" font-size="9" fill="#EAEAEC">vector</text>
+  <text x="590" y="166" font-family="monospace" font-size="9" fill="#6C63FF">stream:</text>
+  <text x="643" y="166" font-family="monospace" font-size="9" fill="#00D4AA">true</text>
+  <text x="590" y="184" font-family="monospace" font-size="9" fill="#6C63FF">max_steps:</text>
+  <text x="668" y="184" font-family="monospace" font-size="9" fill="#EAEAEC">10</text>
+  <!-- title badge -->
+  <rect x="290" y="240" width="220" height="28" rx="14" fill="#6C63FF" fill-opacity="0.15" stroke="#6C63FF" stroke-width="1" stroke-opacity="0.4"/>
+  <text x="400" y="259" text-anchor="middle" font-family="monospace" font-size="11" fill="#6C63FF" letter-spacing="1">AI AGENTS · LANGCHAIN</text>
+</svg>

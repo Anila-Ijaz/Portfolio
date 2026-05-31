@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="300" viewBox="0 0 800 300">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#131318"/>
+      <stop offset="100%" stop-color="#18181E"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="300" fill="url(#bg)"/>
+  <!-- documents stack -->
+  <rect x="40" y="80" width="90" height="120" rx="6" fill="#1e1e2a" stroke="#2A2A35" stroke-width="1.5"/>
+  <rect x="50" y="70" width="90" height="120" rx="6" fill="#1e1e2a" stroke="#2A2A35" stroke-width="1.5"/>
+  <rect x="60" y="60" width="90" height="120" rx="6" fill="#18181E" stroke="#3A3A48" stroke-width="1.5"/>
+  <text x="105" y="95" text-anchor="middle" font-size="18">📄</text>
+  <text x="105" y="114" text-anchor="middle" font-family="monospace" font-size="8" fill="#8B8B95">invoice.pdf</text>
+  <text x="105" y="128" text-anchor="middle" font-family="monospace" font-size="8" fill="#8B8B95">service.pdf</text>
+  <text x="105" y="142" text-anchor="middle" font-family="monospace" font-size="8" fill="#8B8B95">report.pdf</text>
+  <line x1="72" y1="152" x2="138" y2="152" stroke="#2A2A35" stroke-width="1"/>
+  <text x="105" y="168" text-anchor="middle" font-family="monospace" font-size="8" fill="#6C63FF">fleet docs</text>
+  <!-- arrow -->
+  <line x1="152" y1="120" x2="192" y2="120" stroke="#6C63FF" stroke-width="1.5" stroke-dasharray="4 3"/>
+  <polygon points="192,116 200,120 192,124" fill="#6C63FF"/>
+  <!-- OCR + classify box -->
+  <rect x="200" y="90" width="130" height="60" rx="8" fill="#1e1e2a" stroke="#6C63FF" stroke-width="1.5"/>
+  <text x="265" y="116" text-anchor="middle" font-family="monospace" font-size="9" fill="#9B8FFF">OCR + Classify</text>
+  <text x="265" y="133" text-anchor="middle" font-family="monospace" font-size="8" fill="#8B8B95">Extract fields</text>
+  <!-- arrow -->
+  <line x1="332" y1="120" x2="372" y2="120" stroke="#6C63FF" stroke-width="1.5" stroke-dasharray="4 3"/>
+  <polygon points="372,116 380,120 372,124" fill="#6C63FF"/>
+  <!-- LLM box -->
+  <rect x="380" y="90" width="110" height="60" rx="8" fill="#1e1e2a" stroke="#00D4AA" stroke-width="1.5"/>
+  <text x="435" y="114" text-anchor="middle" font-size="16">🧠</text>
+  <text x="435" y="133" text-anchor="middle" font-family="monospace" font-size="9" fill="#00D4AA">LLM Indexing</text>
+  <!-- arrow -->
+  <line x1="492" y1="120" x2="532" y2="120" stroke="#00D4AA" stroke-width="1.5" stroke-dasharray="4 3"/>
+  <polygon points="532,116 540,120 532,124" fill="#00D4AA"/>
+  <!-- query interface -->
+  <rect x="540" y="70" width="220" height="170" rx="10" fill="#18181E" stroke="#2A2A35" stroke-width="1"/>
+  <text x="650" y="93" text-anchor="middle" font-family="monospace" font-size="9" fill="#8B8B95" letter-spacing="1">NATURAL LANGUAGE Q&amp;A</text>
+  <line x1="552" y1="101" x2="748" y2="101" stroke="#2A2A35" stroke-width="1"/>
+  <rect x="556" y="112" width="188" height="24" rx="6" fill="#0C0C0F" stroke="#3A3A48" stroke-width="1"/>
+  <text x="650" y="128" text-anchor="middle" font-family="monospace" font-size="8" fill="#6C63FF">When was last service?</text>
+  <rect x="556" y="148" width="188" height="48" rx="6" fill="#6C63FF" fill-opacity="0.08" stroke="#6C63FF" stroke-width="1" stroke-opacity="0.2"/>
+  <text x="650" y="166" text-anchor="middle" font-family="monospace" font-size="8" fill="#EAEAEC">Last service: 2024-11-03</text>
+  <text x="650" y="181" text-anchor="middle" font-family="monospace" font-size="8" fill="#8B8B95">Source: service_2024.pdf</text>
+  <text x="650" y="195" text-anchor="middle" font-family="monospace" font-size="8" fill="#00D4AA">conf: 0.96 ✓</text>
+  <text x="650" y="220" text-anchor="middle" font-family="monospace" font-size="8" fill="#8B8B95">vehicle · invoice · maintenance</text>
+  <!-- title badge -->
+  <rect x="290" y="248" width="220" height="28" rx="14" fill="#6C63FF" fill-opacity="0.15" stroke="#6C63FF" stroke-width="1" stroke-opacity="0.4"/>
+  <text x="400" y="267" text-anchor="middle" font-family="monospace" font-size="11" fill="#6C63FF" letter-spacing="1">DOCUMENT AI · LLM · OCR</text>
+</svg>
