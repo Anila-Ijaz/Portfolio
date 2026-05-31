@@ -6,45 +6,84 @@
     </linearGradient>
   </defs>
   <rect width="800" height="300" fill="url(#bg)"/>
-  <!-- documents stack -->
-  <rect x="40" y="80" width="90" height="120" rx="6" fill="#1e1e2a" stroke="#2A2A35" stroke-width="1.5"/>
-  <rect x="50" y="70" width="90" height="120" rx="6" fill="#1e1e2a" stroke="#2A2A35" stroke-width="1.5"/>
-  <rect x="60" y="60" width="90" height="120" rx="6" fill="#18181E" stroke="#3A3A48" stroke-width="1.5"/>
-  <text x="105" y="95" text-anchor="middle" font-size="18">📄</text>
-  <text x="105" y="114" text-anchor="middle" font-family="monospace" font-size="8" fill="#8B8B95">invoice.pdf</text>
-  <text x="105" y="128" text-anchor="middle" font-family="monospace" font-size="8" fill="#8B8B95">service.pdf</text>
-  <text x="105" y="142" text-anchor="middle" font-family="monospace" font-size="8" fill="#8B8B95">report.pdf</text>
-  <line x1="72" y1="152" x2="138" y2="152" stroke="#2A2A35" stroke-width="1"/>
-  <text x="105" y="168" text-anchor="middle" font-family="monospace" font-size="8" fill="#6C63FF">fleet docs</text>
-  <!-- arrow -->
-  <line x1="152" y1="120" x2="192" y2="120" stroke="#6C63FF" stroke-width="1.5" stroke-dasharray="4 3"/>
-  <polygon points="192,116 200,120 192,124" fill="#6C63FF"/>
-  <!-- OCR + classify box -->
-  <rect x="200" y="90" width="130" height="60" rx="8" fill="#1e1e2a" stroke="#6C63FF" stroke-width="1.5"/>
-  <text x="265" y="116" text-anchor="middle" font-family="monospace" font-size="9" fill="#9B8FFF">OCR + Classify</text>
-  <text x="265" y="133" text-anchor="middle" font-family="monospace" font-size="8" fill="#8B8B95">Extract fields</text>
-  <!-- arrow -->
-  <line x1="332" y1="120" x2="372" y2="120" stroke="#6C63FF" stroke-width="1.5" stroke-dasharray="4 3"/>
-  <polygon points="372,116 380,120 372,124" fill="#6C63FF"/>
-  <!-- LLM box -->
-  <rect x="380" y="90" width="110" height="60" rx="8" fill="#1e1e2a" stroke="#00D4AA" stroke-width="1.5"/>
-  <text x="435" y="114" text-anchor="middle" font-size="16">🧠</text>
-  <text x="435" y="133" text-anchor="middle" font-family="monospace" font-size="9" fill="#00D4AA">LLM Indexing</text>
-  <!-- arrow -->
-  <line x1="492" y1="120" x2="532" y2="120" stroke="#00D4AA" stroke-width="1.5" stroke-dasharray="4 3"/>
-  <polygon points="532,116 540,120 532,124" fill="#00D4AA"/>
-  <!-- query interface -->
-  <rect x="540" y="70" width="220" height="170" rx="10" fill="#18181E" stroke="#2A2A35" stroke-width="1"/>
-  <text x="650" y="93" text-anchor="middle" font-family="monospace" font-size="9" fill="#8B8B95" letter-spacing="1">NATURAL LANGUAGE Q&amp;A</text>
-  <line x1="552" y1="101" x2="748" y2="101" stroke="#2A2A35" stroke-width="1"/>
-  <rect x="556" y="112" width="188" height="24" rx="6" fill="#0C0C0F" stroke="#3A3A48" stroke-width="1"/>
-  <text x="650" y="128" text-anchor="middle" font-family="monospace" font-size="8" fill="#6C63FF">When was last service?</text>
-  <rect x="556" y="148" width="188" height="48" rx="6" fill="#6C63FF" fill-opacity="0.08" stroke="#6C63FF" stroke-width="1" stroke-opacity="0.2"/>
-  <text x="650" y="166" text-anchor="middle" font-family="monospace" font-size="8" fill="#EAEAEC">Last service: 2024-11-03</text>
-  <text x="650" y="181" text-anchor="middle" font-family="monospace" font-size="8" fill="#8B8B95">Source: service_2024.pdf</text>
-  <text x="650" y="195" text-anchor="middle" font-family="monospace" font-size="8" fill="#00D4AA">conf: 0.96 ✓</text>
-  <text x="650" y="220" text-anchor="middle" font-family="monospace" font-size="8" fill="#8B8B95">vehicle · invoice · maintenance</text>
+
+  <!-- React frontend -->
+  <rect x="18" y="52" width="108" height="62" rx="7" fill="#1a1a2e" stroke="#6C63FF" stroke-width="1.5"/>
+  <text x="72" y="71" text-anchor="middle" font-family="monospace" font-size="8" fill="#9B8FFF" font-weight="600">React UI</text>
+  <text x="72" y="85" text-anchor="middle" font-family="monospace" font-size="7" fill="#8B8B95">upload · list</text>
+  <text x="72" y="98" text-anchor="middle" font-family="monospace" font-size="7" fill="#8B8B95">chat · review</text>
+
+  <!-- n8n -->
+  <rect x="18" y="132" width="108" height="44" rx="7" fill="#1a1a2e" stroke="#9B8FFF" stroke-width="1.2"/>
+  <text x="72" y="151" text-anchor="middle" font-family="monospace" font-size="8" fill="#9B8FFF" font-weight="600">n8n workflow</text>
+  <text x="72" y="166" text-anchor="middle" font-family="monospace" font-size="7" fill="#8B8B95">orchestration</text>
+
+  <!-- arrows right -->
+  <line x1="128" y1="83" x2="158" y2="83" stroke="#6C63FF" stroke-width="1.2" stroke-dasharray="3 2"/>
+  <polygon points="158,80 163,83 158,86" fill="#6C63FF"/>
+  <line x1="128" y1="154" x2="158" y2="154" stroke="#9B8FFF" stroke-width="1.2" stroke-dasharray="3 2"/>
+  <polygon points="158,151 163,154 158,157" fill="#9B8FFF"/>
+
+  <!-- Services box -->
+  <rect x="163" y="36" width="380" height="200" rx="10" fill="#0d1f0d" stroke="#00D4AA" stroke-width="1"/>
+  <text x="353" y="54" text-anchor="middle" font-family="monospace" font-size="8" fill="#00D4AA" font-weight="600">FastAPI Services</text>
+  <line x1="175" y1="61" x2="531" y2="61" stroke="#1a3a1a" stroke-width="1"/>
+
+  <!-- Extraction -->
+  <rect x="176" y="70" width="160" height="46" rx="5" fill="#083a2a" stroke="#5DCAA5" stroke-width="1"/>
+  <text x="256" y="88" text-anchor="middle" font-family="monospace" font-size="8" fill="#9FE1CB" font-weight="500">Extraction service</text>
+  <text x="256" y="103" text-anchor="middle" font-family="monospace" font-size="7" fill="#5DCAA5">LangChain · Pydantic v2</text>
+
+  <!-- RAG -->
+  <rect x="350" y="70" width="160" height="46" rx="5" fill="#083a2a" stroke="#5DCAA5" stroke-width="1"/>
+  <text x="430" y="88" text-anchor="middle" font-family="monospace" font-size="8" fill="#9FE1CB" font-weight="500">RAG chatbot</text>
+  <text x="430" y="103" text-anchor="middle" font-family="monospace" font-size="7" fill="#5DCAA5">pgvector · German Q&amp;A</text>
+
+  <!-- Agent -->
+  <rect x="176" y="130" width="160" height="46" rx="5" fill="#1a3a00" stroke="#EF9F27" stroke-width="1"/>
+  <text x="256" y="148" text-anchor="middle" font-family="monospace" font-size="8" fill="#FAC775" font-weight="500">LangGraph agent</text>
+  <text x="256" y="163" text-anchor="middle" font-family="monospace" font-size="7" fill="#EF9F27">triage · approve · escalate</text>
+
+  <!-- OpenAI -->
+  <rect x="350" y="130" width="160" height="46" rx="5" fill="#1a2a3a" stroke="#4A90D9" stroke-width="1"/>
+  <text x="430" y="148" text-anchor="middle" font-family="monospace" font-size="8" fill="#85C1E9" font-weight="500">OpenAI / LLM layer</text>
+  <text x="430" y="163" text-anchor="middle" font-family="monospace" font-size="7" fill="#4A90D9">gpt-4o-mini · embeddings</text>
+
+  <!-- arrow between services -->
+  <line x1="338" y1="93" x2="348" y2="93" stroke="#5DCAA5" stroke-width="1"/>
+  <polygon points="348,90 352,93 348,96" fill="#5DCAA5"/>
+  <line x1="338" y1="153" x2="348" y2="153" stroke="#EF9F27" stroke-width="1"/>
+  <polygon points="348,150 352,153 348,156" fill="#EF9F27"/>
+
+  <!-- pgvector DB -->
+  <rect x="176" y="196" width="334" height="24" rx="5" fill="#1a1a3a" stroke="#6C63FF" stroke-width="1"/>
+  <text x="343" y="211" text-anchor="middle" font-family="monospace" font-size="7.5" fill="#9B8FFF" font-weight="500">PostgreSQL 16 + pgvector — documents · embeddings · sessions</text>
+
+  <!-- down arrows to DB -->
+  <line x1="256" y1="178" x2="256" y2="194" stroke="#6C63FF" stroke-width="1" stroke-dasharray="3 2"/>
+  <polygon points="253,194 256,198 259,194" fill="#6C63FF"/>
+  <line x1="430" y1="178" x2="430" y2="194" stroke="#6C63FF" stroke-width="1" stroke-dasharray="3 2"/>
+  <polygon points="427,194 430,198 433,194" fill="#6C63FF"/>
+
+  <!-- Right panel: infra -->
+  <rect x="558" y="46" width="222" height="200" rx="8" fill="#18181E" stroke="#2A2A35" stroke-width="1"/>
+  <text x="669" y="64" text-anchor="middle" font-family="monospace" font-size="8" fill="#8B8B95" letter-spacing="1">DEPLOYMENT</text>
+  <line x1="568" y1="71" x2="770" y2="71" stroke="#2A2A35" stroke-width="1"/>
+
+  <rect x="568" y="80" width="200" height="22" rx="4" fill="#0a1a0a" stroke="#00D4AA" stroke-width="0.5"/>
+  <text x="668" y="95" text-anchor="middle" font-family="monospace" font-size="7.5" fill="#00D4AA">🐳 Docker Compose · local</text>
+  <rect x="568" y="108" width="200" height="22" rx="4" fill="#0a1a0a" stroke="#00D4AA" stroke-width="0.5"/>
+  <text x="668" y="123" text-anchor="middle" font-family="monospace" font-size="7.5" fill="#9FE1CB">☸ Kubernetes · kind</text>
+  <rect x="568" y="136" width="200" height="22" rx="4" fill="#0a1a0a" stroke="#EF9F27" stroke-width="0.5"/>
+  <text x="668" y="151" text-anchor="middle" font-family="monospace" font-size="7.5" fill="#FAC775">☁ AWS EKS + ECR</text>
+  <rect x="568" y="164" width="200" height="22" rx="4" fill="#1a1a2e" stroke="#6C63FF" stroke-width="0.5"/>
+  <text x="668" y="179" text-anchor="middle" font-family="monospace" font-size="7.5" fill="#9B8FFF">⚙ GitHub Actions CI</text>
+
+  <line x1="568" y1="196" x2="768" y2="196" stroke="#2A2A35" stroke-width="1"/>
+  <text x="668" y="210" text-anchor="middle" font-family="monospace" font-size="7" fill="#8B8B95">7 phases · 16 tests · 1-cmd start</text>
+  <text x="668" y="224" text-anchor="middle" font-family="monospace" font-size="7" fill="#6C63FF">provider-agnostic LLM layer</text>
+
   <!-- title badge -->
-  <rect x="290" y="248" width="220" height="28" rx="14" fill="#6C63FF" fill-opacity="0.15" stroke="#6C63FF" stroke-width="1" stroke-opacity="0.4"/>
-  <text x="400" y="267" text-anchor="middle" font-family="monospace" font-size="11" fill="#6C63FF" letter-spacing="1">DOCUMENT AI · LLM · OCR</text>
+  <rect x="240" y="254" width="320" height="26" rx="13" fill="#6C63FF" fill-opacity="0.15" stroke="#6C63FF" stroke-width="1" stroke-opacity="0.4"/>
+  <text x="400" y="271" text-anchor="middle" font-family="monospace" font-size="10" fill="#6C63FF" letter-spacing="1">RAG · LANGGRAPH · KUBERNETES · AWS</text>
 </svg>
