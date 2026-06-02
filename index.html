@@ -771,7 +771,7 @@ footer > .container > p { font-size: 0.72rem; color: var(--text-muted); }
         </div>
       </div>
       <form class="contact-form reveal" action="https://formspree.io/f/xvzyejjw" method="POST">
-        <input type="hidden" name="_next" value="https://anilaijaz.site/#contact">
+        <input type="hidden" name="_next" value="https://anilaijaz.site">
         <input type="hidden" name="_subject" value="New message from anilaijaz.site portfolio">
         <div class="form-row">
           <input type="text" name="name" placeholder="Your Name" required>
@@ -851,6 +851,11 @@ document.querySelectorAll('.stat-number').forEach(el=>statObs.observe(el));
 // ─── ABOUT PHOTO TILT ───
 const photo = document.querySelector('.about-photo');
 if(photo){ photo.addEventListener('mousemove',e=>{const r=photo.getBoundingClientRect();const x=(e.clientX-r.left)/r.width-0.5,y=(e.clientY-r.top)/r.height-0.5;photo.style.transform=`perspective(600px) rotateY(${x*12}deg) rotateX(${-y*12}deg) scale(1.02)`;}); photo.addEventListener('mouseleave',()=>{photo.style.transform='';}); }
+
+// ─── CLEAR FORM ON RETURN ───
+window.addEventListener('pageshow', () => {
+  document.querySelector('.contact-form').reset();
+});
 
 // ─── HERO PARALLAX ───
 addEventListener('mousemove', e => {
