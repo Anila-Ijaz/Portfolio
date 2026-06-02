@@ -772,11 +772,11 @@ footer > .container > p { font-size: 0.72rem; color: var(--text-muted); }
       </div>
       <form class="contact-form reveal" action="https://formspree.io/f/xvzyejjw" method="POST">
         <div class="form-row">
-          <input type="text" placeholder="Your Name" required>
-          <input type="email" placeholder="Your Email" required>
+          <input type="text" name="name" placeholder="Your Name" required>
+          <input type="email" name="email" placeholder="Your Email" required>
         </div>
-        <input type="text" placeholder="Subject (e.g. ML Engineer Role)">
-        <textarea placeholder="Tell me about the role or opportunity…" required></textarea>
+        <input type="text" name="subject" placeholder="Subject (e.g. ML Engineer Role)">
+        <textarea name="message" placeholder="Tell me about the role or opportunity…" required></textarea>
         <button type="submit">Reach Out →</button>
       </form>
     </div>
