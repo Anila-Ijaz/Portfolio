@@ -7,83 +7,91 @@
   </defs>
   <rect width="800" height="300" fill="url(#bg)"/>
 
-  <!-- React frontend -->
-  <rect x="18" y="52" width="108" height="62" rx="7" fill="#1a1a2e" stroke="#6C63FF" stroke-width="1.5"/>
-  <text x="72" y="71" text-anchor="middle" font-family="monospace" font-size="8" fill="#9B8FFF" font-weight="600">React UI</text>
-  <text x="72" y="85" text-anchor="middle" font-family="monospace" font-size="7" fill="#8B8B95">upload · list</text>
-  <text x="72" y="98" text-anchor="middle" font-family="monospace" font-size="7" fill="#8B8B95">chat · review</text>
+  <!-- Left: React UI + n8n -->
+  <rect x="18" y="52" width="118" height="58" rx="7" fill="#1a1a2e" stroke="#6C63FF" stroke-width="1.5"/>
+  <text x="77" y="72" text-anchor="middle" font-family="monospace" font-size="8" fill="#9B8FFF" font-weight="600">React UI</text>
+  <text x="77" y="86" text-anchor="middle" font-family="monospace" font-size="7" fill="#8B8B95">upload · list</text>
+  <text x="77" y="99" text-anchor="middle" font-family="monospace" font-size="7" fill="#8B8B95">chat · review</text>
 
-  <!-- n8n -->
-  <rect x="18" y="132" width="108" height="44" rx="7" fill="#1a1a2e" stroke="#9B8FFF" stroke-width="1.2"/>
-  <text x="72" y="151" text-anchor="middle" font-family="monospace" font-size="8" fill="#9B8FFF" font-weight="600">n8n workflow</text>
-  <text x="72" y="166" text-anchor="middle" font-family="monospace" font-size="7" fill="#8B8B95">orchestration</text>
+  <rect x="18" y="126" width="118" height="42" rx="7" fill="#1a1a2e" stroke="#9B8FFF" stroke-width="1.2"/>
+  <text x="77" y="145" text-anchor="middle" font-family="monospace" font-size="8" fill="#9B8FFF" font-weight="600">n8n workflow</text>
+  <text x="77" y="159" text-anchor="middle" font-family="monospace" font-size="7" fill="#8B8B95">orchestration</text>
 
-  <!-- arrows right -->
-  <line x1="128" y1="83" x2="158" y2="83" stroke="#6C63FF" stroke-width="1.2" stroke-dasharray="3 2"/>
-  <polygon points="158,80 163,83 158,86" fill="#6C63FF"/>
-  <line x1="128" y1="154" x2="158" y2="154" stroke="#9B8FFF" stroke-width="1.2" stroke-dasharray="3 2"/>
-  <polygon points="158,151 163,154 158,157" fill="#9B8FFF"/>
+  <!-- Arrows -->
+  <line x1="138" y1="81" x2="162" y2="81" stroke="#6C63FF" stroke-width="1.2" stroke-dasharray="3 2"/>
+  <polygon points="162,78 167,81 162,84" fill="#6C63FF"/>
+  <line x1="138" y1="147" x2="162" y2="147" stroke="#9B8FFF" stroke-width="1.2" stroke-dasharray="3 2"/>
+  <polygon points="162,144 167,147 162,150" fill="#9B8FFF"/>
 
-  <!-- Services box -->
-  <rect x="163" y="36" width="380" height="200" rx="10" fill="#0d1f0d" stroke="#00D4AA" stroke-width="1"/>
-  <text x="353" y="54" text-anchor="middle" font-family="monospace" font-size="8" fill="#00D4AA" font-weight="600">FastAPI Services</text>
-  <line x1="175" y1="61" x2="531" y2="61" stroke="#1a3a1a" stroke-width="1"/>
+  <!-- FastAPI Services box -->
+  <rect x="168" y="34" width="390" height="206" rx="10" fill="#0d1f0d" stroke="#00D4AA" stroke-width="1"/>
+  <text x="363" y="52" text-anchor="middle" font-family="monospace" font-size="8" fill="#00D4AA" font-weight="600">FastAPI Services</text>
+  <line x1="180" y1="59" x2="546" y2="59" stroke="#1a3a1a" stroke-width="1"/>
 
   <!-- Extraction -->
-  <rect x="176" y="70" width="160" height="46" rx="5" fill="#083a2a" stroke="#5DCAA5" stroke-width="1"/>
-  <text x="256" y="88" text-anchor="middle" font-family="monospace" font-size="8" fill="#9FE1CB" font-weight="500">Extraction service</text>
-  <text x="256" y="103" text-anchor="middle" font-family="monospace" font-size="7" fill="#5DCAA5">LangChain · Pydantic v2</text>
+  <rect x="180" y="66" width="168" height="46" rx="5" fill="#083a2a" stroke="#5DCAA5" stroke-width="1"/>
+  <text x="264" y="84" text-anchor="middle" font-family="monospace" font-size="8" fill="#9FE1CB" font-weight="500">Extraction service</text>
+  <text x="264" y="99" text-anchor="middle" font-family="monospace" font-size="7" fill="#5DCAA5">LangChain · Pydantic v2</text>
 
-  <!-- RAG -->
-  <rect x="350" y="70" width="160" height="46" rx="5" fill="#083a2a" stroke="#5DCAA5" stroke-width="1"/>
-  <text x="430" y="88" text-anchor="middle" font-family="monospace" font-size="8" fill="#9FE1CB" font-weight="500">RAG chatbot</text>
-  <text x="430" y="103" text-anchor="middle" font-family="monospace" font-size="7" fill="#5DCAA5">pgvector · German Q&amp;A</text>
+  <!-- RAG chatbot -->
+  <rect x="360" y="66" width="168" height="46" rx="5" fill="#083a2a" stroke="#5DCAA5" stroke-width="1"/>
+  <text x="444" y="84" text-anchor="middle" font-family="monospace" font-size="8" fill="#9FE1CB" font-weight="500">RAG chatbot</text>
+  <text x="444" y="99" text-anchor="middle" font-family="monospace" font-size="7" fill="#5DCAA5">pgvector · English Q&amp;A</text>
 
-  <!-- Agent -->
-  <rect x="176" y="130" width="160" height="46" rx="5" fill="#1a3a00" stroke="#EF9F27" stroke-width="1"/>
-  <text x="256" y="148" text-anchor="middle" font-family="monospace" font-size="8" fill="#FAC775" font-weight="500">LangGraph agent</text>
-  <text x="256" y="163" text-anchor="middle" font-family="monospace" font-size="7" fill="#EF9F27">triage · approve · escalate</text>
+  <!-- connector -->
+  <line x1="350" y1="89" x2="358" y2="89" stroke="#5DCAA5" stroke-width="1"/>
+  <polygon points="358,86 362,89 358,92" fill="#5DCAA5"/>
+
+  <!-- LangGraph agent -->
+  <rect x="180" y="126" width="168" height="46" rx="5" fill="#1a3a00" stroke="#EF9F27" stroke-width="1"/>
+  <text x="264" y="144" text-anchor="middle" font-family="monospace" font-size="8" fill="#FAC775" font-weight="500">LangGraph agent</text>
+  <text x="264" y="159" text-anchor="middle" font-family="monospace" font-size="7" fill="#EF9F27">triage · approve · escalate</text>
 
   <!-- OpenAI -->
-  <rect x="350" y="130" width="160" height="46" rx="5" fill="#1a2a3a" stroke="#4A90D9" stroke-width="1"/>
-  <text x="430" y="148" text-anchor="middle" font-family="monospace" font-size="8" fill="#85C1E9" font-weight="500">OpenAI / LLM layer</text>
-  <text x="430" y="163" text-anchor="middle" font-family="monospace" font-size="7" fill="#4A90D9">gpt-4o-mini · embeddings</text>
+  <rect x="360" y="126" width="168" height="46" rx="5" fill="#1a2a3a" stroke="#4A90D9" stroke-width="1"/>
+  <text x="444" y="144" text-anchor="middle" font-family="monospace" font-size="8" fill="#85C1E9" font-weight="500">OpenAI / LLM layer</text>
+  <text x="444" y="159" text-anchor="middle" font-family="monospace" font-size="7" fill="#4A90D9">gpt-4o-mini · embeddings</text>
 
-  <!-- arrow between services -->
-  <line x1="338" y1="93" x2="348" y2="93" stroke="#5DCAA5" stroke-width="1"/>
-  <polygon points="348,90 352,93 348,96" fill="#5DCAA5"/>
-  <line x1="338" y1="153" x2="348" y2="153" stroke="#EF9F27" stroke-width="1"/>
-  <polygon points="348,150 352,153 348,156" fill="#EF9F27"/>
+  <!-- connector -->
+  <line x1="350" y1="149" x2="358" y2="149" stroke="#EF9F27" stroke-width="1"/>
+  <polygon points="358,146 362,149 358,152" fill="#EF9F27"/>
 
-  <!-- pgvector DB -->
-  <rect x="176" y="196" width="334" height="24" rx="5" fill="#1a1a3a" stroke="#6C63FF" stroke-width="1"/>
-  <text x="343" y="211" text-anchor="middle" font-family="monospace" font-size="7.5" fill="#9B8FFF" font-weight="500">PostgreSQL 16 + pgvector — documents · embeddings · sessions</text>
+  <!-- DB -->
+  <rect x="180" y="192" width="348" height="20" rx="5" fill="#1a1a3a" stroke="#6C63FF" stroke-width="1"/>
+  <text x="354" y="205" text-anchor="middle" font-family="monospace" font-size="7.5" fill="#9B8FFF" font-weight="500">PostgreSQL 18 + pgvector — documents · embeddings · sessions</text>
 
-  <!-- down arrows to DB -->
-  <line x1="256" y1="178" x2="256" y2="194" stroke="#6C63FF" stroke-width="1" stroke-dasharray="3 2"/>
-  <polygon points="253,194 256,198 259,194" fill="#6C63FF"/>
-  <line x1="430" y1="178" x2="430" y2="194" stroke="#6C63FF" stroke-width="1" stroke-dasharray="3 2"/>
-  <polygon points="427,194 430,198 433,194" fill="#6C63FF"/>
+  <!-- DB arrows -->
+  <line x1="264" y1="174" x2="264" y2="190" stroke="#6C63FF" stroke-width="1" stroke-dasharray="3 2"/>
+  <polygon points="261,190 264,194 267,190" fill="#6C63FF"/>
+  <line x1="444" y1="174" x2="444" y2="190" stroke="#6C63FF" stroke-width="1" stroke-dasharray="3 2"/>
+  <polygon points="441,190 444,194 447,190" fill="#6C63FF"/>
 
-  <!-- Right panel: infra -->
-  <rect x="558" y="46" width="222" height="200" rx="8" fill="#18181E" stroke="#2A2A35" stroke-width="1"/>
-  <text x="669" y="64" text-anchor="middle" font-family="monospace" font-size="8" fill="#8B8B95" letter-spacing="1">DEPLOYMENT</text>
-  <line x1="568" y1="71" x2="770" y2="71" stroke="#2A2A35" stroke-width="1"/>
+  <!-- Right: Deployment panel -->
+  <rect x="572" y="44" width="210" height="196" rx="8" fill="#18181E" stroke="#2A2A35" stroke-width="1"/>
+  <text x="677" y="63" text-anchor="middle" font-family="monospace" font-size="8" fill="#8B8B95" letter-spacing="1">DEPLOYMENT</text>
+  <line x1="582" y1="70" x2="772" y2="70" stroke="#2A2A35" stroke-width="1"/>
 
-  <rect x="568" y="80" width="200" height="22" rx="4" fill="#0a1a0a" stroke="#00D4AA" stroke-width="0.5"/>
-  <text x="668" y="95" text-anchor="middle" font-family="monospace" font-size="7.5" fill="#00D4AA">🐳 Docker Compose · local</text>
-  <rect x="568" y="108" width="200" height="22" rx="4" fill="#0a1a0a" stroke="#00D4AA" stroke-width="0.5"/>
-  <text x="668" y="123" text-anchor="middle" font-family="monospace" font-size="7.5" fill="#9FE1CB">☸ Kubernetes · kind</text>
-  <rect x="568" y="136" width="200" height="22" rx="4" fill="#0a1a0a" stroke="#EF9F27" stroke-width="0.5"/>
-  <text x="668" y="151" text-anchor="middle" font-family="monospace" font-size="7.5" fill="#FAC775">☁ AWS EKS + ECR</text>
-  <rect x="568" y="164" width="200" height="22" rx="4" fill="#1a1a2e" stroke="#6C63FF" stroke-width="0.5"/>
-  <text x="668" y="179" text-anchor="middle" font-family="monospace" font-size="7.5" fill="#9B8FFF">⚙ GitHub Actions CI</text>
+  <!-- Render badge -->
+  <rect x="582" y="79" width="190" height="24" rx="5" fill="#0a1a0a" stroke="#00D4AA" stroke-width="0.8"/>
+  <text x="677" y="95" text-anchor="middle" font-family="monospace" font-size="8" fill="#00D4AA">☁ Render · Frankfurt</text>
 
-  <line x1="568" y1="196" x2="768" y2="196" stroke="#2A2A35" stroke-width="1"/>
-  <text x="668" y="210" text-anchor="middle" font-family="monospace" font-size="7" fill="#8B8B95">7 phases · 16 tests · 1-cmd start</text>
-  <text x="668" y="224" text-anchor="middle" font-family="monospace" font-size="7" fill="#6C63FF">provider-agnostic LLM layer</text>
+  <!-- Docker -->
+  <rect x="582" y="109" width="190" height="24" rx="5" fill="#0a1a0a" stroke="#5DCAA5" stroke-width="0.8"/>
+  <text x="677" y="125" text-anchor="middle" font-family="monospace" font-size="8" fill="#9FE1CB">🐳 Docker · 4 services</text>
 
-  <!-- title badge -->
-  <rect x="240" y="254" width="320" height="26" rx="13" fill="#6C63FF" fill-opacity="0.15" stroke="#6C63FF" stroke-width="1" stroke-opacity="0.4"/>
-  <text x="400" y="271" text-anchor="middle" font-family="monospace" font-size="10" fill="#6C63FF" letter-spacing="1">RAG · LANGGRAPH · KUBERNETES · AWS</text>
+  <!-- PostgreSQL -->
+  <rect x="582" y="139" width="190" height="24" rx="5" fill="#1a1a2e" stroke="#6C63FF" stroke-width="0.8"/>
+  <text x="677" y="155" text-anchor="middle" font-family="monospace" font-size="8" fill="#9B8FFF">🗄 PostgreSQL 18 · Render</text>
+
+  <!-- GitHub Actions -->
+  <rect x="582" y="169" width="190" height="24" rx="5" fill="#1a1a2e" stroke="#9B8FFF" stroke-width="0.8"/>
+  <text x="677" y="185" text-anchor="middle" font-family="monospace" font-size="8" fill="#9B8FFF">⚙ GitHub Actions CI</text>
+
+  <line x1="582" y1="202" x2="772" y2="202" stroke="#2A2A35" stroke-width="1"/>
+  <text x="677" y="216" text-anchor="middle" font-family="monospace" font-size="7" fill="#8B8B95">7 phases · 16 tests · 1-cmd start</text>
+  <text x="677" y="229" text-anchor="middle" font-family="monospace" font-size="7" fill="#6C63FF">provider-agnostic LLM layer</text>
+
+  <!-- Badge -->
+  <rect x="232" y="256" width="336" height="26" rx="13" fill="#6C63FF" fill-opacity="0.15" stroke="#6C63FF" stroke-width="1" stroke-opacity="0.4"/>
+  <text x="400" y="273" text-anchor="middle" font-family="monospace" font-size="10" fill="#6C63FF" letter-spacing="1">RAG · LANGGRAPH · RENDER · DOCKER</text>
 </svg>
