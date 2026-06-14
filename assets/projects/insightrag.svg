@@ -7,91 +7,92 @@
   </defs>
   <rect width="800" height="300" fill="url(#bg)"/>
 
-  <!-- Left: Streamlit UI + SEC EDGAR -->
-  <rect x="18" y="52" width="118" height="58" rx="7" fill="#1e1929" stroke="#9B8FFF" stroke-width="1.5"/>
-  <text x="77" y="72" text-anchor="middle" font-family="monospace" font-size="8" fill="#C8B8FF" font-weight="600">Streamlit UI</text>
-  <text x="77" y="86" text-anchor="middle" font-family="monospace" font-size="7" fill="#8B8B95">chat · citations</text>
-  <text x="77" y="99" text-anchor="middle" font-family="monospace" font-size="7" fill="#8B8B95">live latency panel</text>
+  <!-- Left: Streamlit UI -->
+  <rect x="18" y="46" width="118" height="58" rx="7" fill="#1e1929" stroke="#9B8FFF" stroke-width="1.5"/>
+  <text x="77" y="66" text-anchor="middle" font-family="monospace" font-size="8" fill="#C8B8FF" font-weight="600">Streamlit UI</text>
+  <text x="77" y="80" text-anchor="middle" font-family="monospace" font-size="7" fill="#8B8B95">chat · citations</text>
+  <text x="77" y="93" text-anchor="middle" font-family="monospace" font-size="7" fill="#8B8B95">live latency panel</text>
 
-  <rect x="18" y="126" width="118" height="42" rx="7" fill="#1a1a2e" stroke="#6C63FF" stroke-width="1.2"/>
-  <text x="77" y="145" text-anchor="middle" font-family="monospace" font-size="8" fill="#9B8FFF" font-weight="600">SEC EDGAR</text>
-  <text x="77" y="159" text-anchor="middle" font-family="monospace" font-size="7" fill="#8B8B95">10-K · AAPL indexed</text>
+  <!-- Left: SEC EDGAR -->
+  <rect x="18" y="118" width="118" height="44" rx="7" fill="#1a1a2e" stroke="#6C63FF" stroke-width="1.2"/>
+  <text x="77" y="138" text-anchor="middle" font-family="monospace" font-size="8" fill="#9B8FFF" font-weight="600">SEC EDGAR</text>
+  <text x="77" y="152" text-anchor="middle" font-family="monospace" font-size="7" fill="#8B8B95">10-K · AAPL indexed</text>
 
   <!-- Arrows left → FastAPI box -->
-  <line x1="138" y1="81" x2="151" y2="81" stroke="#9B8FFF" stroke-width="1.2" stroke-dasharray="3 2"/>
-  <polygon points="151,78 156,81 151,84" fill="#9B8FFF"/>
-  <line x1="138" y1="147" x2="151" y2="147" stroke="#6C63FF" stroke-width="1.2" stroke-dasharray="3 2"/>
-  <polygon points="151,144 156,147 151,150" fill="#6C63FF"/>
+  <line x1="138" y1="75" x2="153" y2="75" stroke="#9B8FFF" stroke-width="1.2" stroke-dasharray="3 2"/>
+  <polygon points="150,72 155,75 150,78" fill="#9B8FFF"/>
+  <line x1="138" y1="140" x2="153" y2="140" stroke="#6C63FF" stroke-width="1.2" stroke-dasharray="3 2"/>
+  <polygon points="150,137 155,140 150,143" fill="#6C63FF"/>
 
-  <!-- FastAPI RAG Pipeline box -->
-  <rect x="158" y="34" width="390" height="216" rx="10" fill="#0d1520" stroke="#4A90D9" stroke-width="1"/>
-  <text x="353" y="52" text-anchor="middle" font-family="monospace" font-size="8" fill="#85C1E9" font-weight="600">FastAPI · RAG Pipeline</text>
-  <line x1="170" y1="59" x2="536" y2="59" stroke="#1a4a6a" stroke-width="1"/>
+  <!-- FastAPI RAG Pipeline box: y=28, height=216, bottom=244 -->
+  <rect x="158" y="28" width="390" height="216" rx="10" fill="#0d1520" stroke="#4A90D9" stroke-width="1"/>
+  <text x="353" y="46" text-anchor="middle" font-family="monospace" font-size="8" fill="#85C1E9" font-weight="600">FastAPI · RAG Pipeline</text>
+  <line x1="170" y1="53" x2="536" y2="53" stroke="#1a4a6a" stroke-width="1"/>
 
   <!-- TL: Ingestion pipeline -->
-  <rect x="170" y="66" width="173" height="46" rx="5" fill="#083a2a" stroke="#5DCAA5" stroke-width="1"/>
-  <text x="257" y="84" text-anchor="middle" font-family="monospace" font-size="8" fill="#9FE1CB" font-weight="500">Ingestion pipeline</text>
-  <text x="257" y="99" text-anchor="middle" font-family="monospace" font-size="7" fill="#5DCAA5">Parser · Chunker · BGE Embedder</text>
+  <rect x="170" y="60" width="173" height="48" rx="5" fill="#083a2a" stroke="#5DCAA5" stroke-width="1"/>
+  <text x="257" y="79" text-anchor="middle" font-family="monospace" font-size="8" fill="#9FE1CB" font-weight="500">Ingestion pipeline</text>
+  <text x="257" y="95" text-anchor="middle" font-family="monospace" font-size="7" fill="#5DCAA5">Parser · Chunker · BGE Embedder</text>
 
   <!-- TR: Dual Index -->
-  <rect x="355" y="66" width="173" height="46" rx="5" fill="#083a2a" stroke="#5DCAA5" stroke-width="1"/>
-  <text x="442" y="84" text-anchor="middle" font-family="monospace" font-size="8" fill="#9FE1CB" font-weight="500">Dual Index</text>
-  <text x="442" y="99" text-anchor="middle" font-family="monospace" font-size="7" fill="#5DCAA5">Qdrant (dense) · BM25 (sparse)</text>
+  <rect x="355" y="60" width="173" height="48" rx="5" fill="#083a2a" stroke="#5DCAA5" stroke-width="1"/>
+  <text x="442" y="79" text-anchor="middle" font-family="monospace" font-size="8" fill="#9FE1CB" font-weight="500">Dual Index</text>
+  <text x="442" y="95" text-anchor="middle" font-family="monospace" font-size="7" fill="#5DCAA5">Qdrant (dense) · BM25 (sparse)</text>
 
   <!-- TL → TR connector -->
-  <line x1="345" y1="89" x2="353" y2="89" stroke="#5DCAA5" stroke-width="1"/>
-  <polygon points="350,86 355,89 350,92" fill="#5DCAA5"/>
+  <line x1="345" y1="84" x2="353" y2="84" stroke="#5DCAA5" stroke-width="1"/>
+  <polygon points="350,81 355,84 350,87" fill="#5DCAA5"/>
 
   <!-- BL: Hybrid RRF + Cross-Encoder -->
-  <rect x="170" y="128" width="173" height="46" rx="5" fill="#1a3a00" stroke="#EF9F27" stroke-width="1"/>
-  <text x="257" y="146" text-anchor="middle" font-family="monospace" font-size="8" fill="#FAC775" font-weight="500">Hybrid RRF · top-20</text>
-  <text x="257" y="161" text-anchor="middle" font-family="monospace" font-size="7" fill="#EF9F27">Cross-Encoder reranker · top-5</text>
+  <rect x="170" y="122" width="173" height="48" rx="5" fill="#1a3a00" stroke="#EF9F27" stroke-width="1"/>
+  <text x="257" y="141" text-anchor="middle" font-family="monospace" font-size="8" fill="#FAC775" font-weight="500">Hybrid RRF · top-20</text>
+  <text x="257" y="157" text-anchor="middle" font-family="monospace" font-size="7" fill="#EF9F27">Cross-Encoder reranker · top-5</text>
 
   <!-- BR: LLM + Citation Guard -->
-  <rect x="355" y="128" width="173" height="46" rx="5" fill="#1a2a3a" stroke="#4A90D9" stroke-width="1"/>
-  <text x="442" y="146" text-anchor="middle" font-family="monospace" font-size="8" fill="#85C1E9" font-weight="500">LLM · OpenAI / Anthropic</text>
-  <text x="442" y="161" text-anchor="middle" font-family="monospace" font-size="7" fill="#4A90D9">Citation guard · SSE stream</text>
+  <rect x="355" y="122" width="173" height="48" rx="5" fill="#1a2a3a" stroke="#4A90D9" stroke-width="1"/>
+  <text x="442" y="141" text-anchor="middle" font-family="monospace" font-size="8" fill="#85C1E9" font-weight="500">LLM · OpenAI / Anthropic</text>
+  <text x="442" y="157" text-anchor="middle" font-family="monospace" font-size="7" fill="#4A90D9">Citation guard · SSE stream</text>
 
   <!-- BL → BR connector -->
-  <line x1="345" y1="151" x2="353" y2="151" stroke="#EF9F27" stroke-width="1"/>
-  <polygon points="350,148 355,151 350,154" fill="#EF9F27"/>
+  <line x1="345" y1="146" x2="353" y2="146" stroke="#EF9F27" stroke-width="1"/>
+  <polygon points="350,143 355,146 350,149" fill="#EF9F27"/>
 
   <!-- DB row -->
-  <rect x="170" y="194" width="358" height="20" rx="5" fill="#1a1a3a" stroke="#6C63FF" stroke-width="1"/>
-  <text x="349" y="207" text-anchor="middle" font-family="monospace" font-size="7.5" fill="#9B8FFF" font-weight="500">Qdrant (dense) + BM25 (sparse) — SEC 10-K corpus · AAPL · MSFT · GOOGL</text>
+  <rect x="170" y="186" width="358" height="20" rx="5" fill="#1a1a3a" stroke="#6C63FF" stroke-width="1"/>
+  <text x="349" y="199" text-anchor="middle" font-family="monospace" font-size="7.5" fill="#9B8FFF" font-weight="500">Qdrant + BM25 — SEC 10-K corpus · AAPL · MSFT · GOOGL · 466 chunks</text>
 
   <!-- DB arrows -->
-  <line x1="257" y1="176" x2="257" y2="192" stroke="#6C63FF" stroke-width="1" stroke-dasharray="3 2"/>
-  <polygon points="254,192 257,196 260,192" fill="#6C63FF"/>
-  <line x1="442" y1="176" x2="442" y2="192" stroke="#6C63FF" stroke-width="1" stroke-dasharray="3 2"/>
-  <polygon points="439,192 442,196 445,192" fill="#6C63FF"/>
+  <line x1="257" y1="172" x2="257" y2="184" stroke="#6C63FF" stroke-width="1" stroke-dasharray="3 2"/>
+  <polygon points="254,184 257,188 260,184" fill="#6C63FF"/>
+  <line x1="442" y1="172" x2="442" y2="184" stroke="#6C63FF" stroke-width="1" stroke-dasharray="3 2"/>
+  <polygon points="439,184 442,188 445,184" fill="#6C63FF"/>
 
-  <!-- Right: Deployment panel -->
-  <rect x="562" y="44" width="222" height="196" rx="8" fill="#18181E" stroke="#2A2A35" stroke-width="1"/>
-  <text x="673" y="63" text-anchor="middle" font-family="monospace" font-size="8" fill="#8B8B95" letter-spacing="1">DEPLOYMENT</text>
-  <line x1="572" y1="70" x2="774" y2="70" stroke="#2A2A35" stroke-width="1"/>
+  <!-- Right: Deployment panel: y=44, height=200, bottom=244 -->
+  <rect x="562" y="38" width="222" height="206" rx="8" fill="#18181E" stroke="#2A2A35" stroke-width="1"/>
+  <text x="673" y="57" text-anchor="middle" font-family="monospace" font-size="8" fill="#8B8B95" letter-spacing="1">DEPLOYMENT</text>
+  <line x1="572" y1="64" x2="774" y2="64" stroke="#2A2A35" stroke-width="1"/>
 
   <!-- AWS EC2 -->
-  <rect x="572" y="78" width="202" height="24" rx="5" fill="#0a1a0a" stroke="#00D4AA" stroke-width="0.8"/>
-  <text x="673" y="94" text-anchor="middle" font-family="monospace" font-size="8" fill="#00D4AA">☁ AWS EC2 · Frankfurt</text>
+  <rect x="572" y="72" width="202" height="24" rx="5" fill="#0a1a0a" stroke="#00D4AA" stroke-width="0.8"/>
+  <text x="673" y="88" text-anchor="middle" font-family="monospace" font-size="8" fill="#00D4AA">☁ AWS EC2 · Frankfurt</text>
 
   <!-- Docker -->
-  <rect x="572" y="108" width="202" height="24" rx="5" fill="#0a1a0a" stroke="#5DCAA5" stroke-width="0.8"/>
-  <text x="673" y="124" text-anchor="middle" font-family="monospace" font-size="8" fill="#9FE1CB">🐳 Docker · lite profile</text>
+  <rect x="572" y="102" width="202" height="24" rx="5" fill="#0a1a0a" stroke="#5DCAA5" stroke-width="0.8"/>
+  <text x="673" y="118" text-anchor="middle" font-family="monospace" font-size="8" fill="#9FE1CB">🐳 Docker · lite profile</text>
 
   <!-- Qdrant -->
-  <rect x="572" y="138" width="202" height="24" rx="5" fill="#1a1a2e" stroke="#6C63FF" stroke-width="0.8"/>
-  <text x="673" y="154" text-anchor="middle" font-family="monospace" font-size="8" fill="#9B8FFF">🗄 Qdrant · vector store</text>
+  <rect x="572" y="132" width="202" height="24" rx="5" fill="#1a1a2e" stroke="#6C63FF" stroke-width="0.8"/>
+  <text x="673" y="148" text-anchor="middle" font-family="monospace" font-size="8" fill="#9B8FFF">🗄 Qdrant · vector store</text>
 
   <!-- GitHub Actions -->
-  <rect x="572" y="168" width="202" height="24" rx="5" fill="#1a1a2e" stroke="#9B8FFF" stroke-width="0.8"/>
-  <text x="673" y="184" text-anchor="middle" font-family="monospace" font-size="8" fill="#9B8FFF">⚙ GitHub Actions CI/CD</text>
+  <rect x="572" y="162" width="202" height="24" rx="5" fill="#1a1a2e" stroke="#9B8FFF" stroke-width="0.8"/>
+  <text x="673" y="178" text-anchor="middle" font-family="monospace" font-size="8" fill="#9B8FFF">⚙ GitHub Actions CI/CD</text>
 
-  <line x1="572" y1="202" x2="774" y2="202" stroke="#2A2A35" stroke-width="1"/>
-  <text x="673" y="216" text-anchor="middle" font-family="monospace" font-size="7" fill="#8B8B95">25 tests · RAGAS eval · GHCR</text>
-  <text x="673" y="229" text-anchor="middle" font-family="monospace" font-size="7" fill="#6C63FF">Elastic IP · API-key auth · live demo</text>
+  <line x1="572" y1="196" x2="774" y2="196" stroke="#2A2A35" stroke-width="1"/>
+  <text x="673" y="210" text-anchor="middle" font-family="monospace" font-size="7" fill="#8B8B95">25 tests · RAGAS eval · GHCR</text>
+  <text x="673" y="224" text-anchor="middle" font-family="monospace" font-size="7" fill="#6C63FF">Elastic IP · API-key auth</text>
 
   <!-- Badge -->
-  <rect x="196" y="256" width="354" height="26" rx="13" fill="#4A90D9" fill-opacity="0.15" stroke="#4A90D9" stroke-width="1" stroke-opacity="0.4"/>
-  <text x="373" y="273" text-anchor="middle" font-family="monospace" font-size="10" fill="#4A90D9" letter-spacing="1">HYBRID RAG · QDRANT · BGE · RAGAS</text>
+  <rect x="196" y="250" width="354" height="26" rx="13" fill="#4A90D9" fill-opacity="0.15" stroke="#4A90D9" stroke-width="1" stroke-opacity="0.4"/>
+  <text x="373" y="267" text-anchor="middle" font-family="monospace" font-size="10" fill="#4A90D9" letter-spacing="1">HYBRID RAG · QDRANT · BGE · RAGAS</text>
 </svg>
