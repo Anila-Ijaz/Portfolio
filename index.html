@@ -618,12 +618,17 @@ footer > .container > p { font-size: 0.72rem; color: var(--text-muted); }
         <div class="project-thumb">
           <img src="assets/projects/insightrag.svg" alt="InsightRAG" onerror="this.style.display='none';">
           <span class="project-thumb-icon">🔎</span>
-          <span class="project-thumb-tag">RAG PIPELINE</span>
+          <span class="project-thumb-tag">HYBRID RAG · AWS</span>
         </div>
         <div class="project-body">
           <h3>InsightRAG</h3>
-          <p>End-to-end RAG pipeline with document ingestion, semantic chunking, and hybrid search. Retrieves grounded answers with source citations — designed for enterprise Q&A and knowledge base querying over large document sets.</p>
-          <div class="project-tech"><span>Python</span><span>LangChain</span><span>FAISS</span><span>LLMs</span><span>FastAPI</span></div>
+          <p>Production-grade RAG system for SEC 10-K financial filings — live on AWS EC2 (Frankfurt). Features hybrid retrieval (dense BGE + BM25 with RRF fusion), a fine-tuned cross-encoder reranker, citation-validated answers, PII guardrails via Presidio, and RAGAS benchmarking. Ships in two Docker profiles: lite (OpenAI embeddings, free-tier deployable) and full (local BGE + reranker + observability). Benchmarked: 25 tests · Faithfulness 0.77 · nDCG@10 measured · runs with one command.</p>
+          <div class="project-tech">
+            <span>Python</span><span>FastAPI</span><span>Pydantic v2</span><span>Qdrant</span>
+            <span>BGE</span><span>BM25</span><span>Hybrid RAG</span><span>OpenAI</span>
+            <span>Streamlit</span><span>RAGAS</span><span>Docker</span><span>AWS EC2</span>
+            <span>GitHub Actions</span><span>Presidio</span>
+          </div>
           <div class="project-links">
             <a href="https://github.com/Anila-Ijaz/InsightRAG" target="_blank">↗ View on GitHub</a>
           </div>
